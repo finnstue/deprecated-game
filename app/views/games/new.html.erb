@@ -1,0 +1,9 @@
+<!-- app/views/games/new.html.erb -->
+
+<%= form_with url: games_path, method: :post do |form| %>
+  <h1>Create a New Game</h1>
+  <%= form.submit "Create Game" %>
+<% end %>
+
+<h2>Or Join a Game</h2>
+<%= render 'join' %>

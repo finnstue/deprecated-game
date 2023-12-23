@@ -1,0 +1,10 @@
+<div data-controller="quiplash">
+<h1>Waiting in Lobby for Game <%= @game.code %></h1>
+<p>Game code: <%= @game.code %></p>
+
+<%# Display information about the game, such as current players, etc. %>
+<%# ... %>
+
+<%# Optionally, provide a way to start the game or leave the lobby %>
+<%= button_to 'Start Game', start_game_path(@game), method: :post %>
+</div>

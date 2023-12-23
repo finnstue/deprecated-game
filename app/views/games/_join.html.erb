@@ -1,0 +1,7 @@
+<!-- app/views/games/_join.html.erb -->
+
+<%= form_with url: join_game_path, method: :post do |form| %>
+  <%= form.label :code, "Game Code:" %>
+  <%= form.text_field :code %>
+  <%= form.submit "Join Game", name: "join_game" %>
+<% end %>
